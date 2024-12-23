@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/bakery-black-table-background_44073-965.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Adjust the blur intensity */
+    z-index: -1; /* Push it behind the content */
+    transform: scale(1.1); /* Scale up to avoid edge issues */
+}
+#logo{
+  min-height: 40%;
+    max-width: 70%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;    
+    margin: auto;
+}
+:root{
+    --primary: #d6da03;
+    --fontfamily: "Arial";
+    --secondary: #b4b4b4;
+    --btncolor: #e7d105;
+    --fontcolor: black;
+    --rowspacing: 1em;
+    --padding:1.2em;
+    --fontsize: 1em;
+}
+#logoarea{
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+}
+label{
+    display: block;
+    color: var(--primary);
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize);   
+}
+input{
+    width: 100% ;
+    padding: var(--padding);
+    border: 1px solid;
+    border-color: var(--secondary);
+} 
+.row{
+    margin-bottom: var(--rowspacing);
+}
+.t-right{
+    text-align: right;
+}
+.t-right a{
+    color: var(--secondary);
+    font-family: var(--fontfamily);
+    font-size: var(--fontsize);
+    text-decoration: none;
+}
+button{
+    width: 100%;
+    background-color: var(--btncolor);
+    padding: var(--padding);
+    color: var(--fontcolor);
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 30px;
+}
+.sep{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary);
+}
+.sep span:first-child,.sep span:last-child{
+    border-top: 1px solid;
+    width: 40%;
+}
+.sep span:nth-child(2){
+    color: var(--primary);
+    font-family: var(--fontfamily);
+}
+.google, .fb, .ins{
+    display: inline;
+    width: 15%;
+    padding: 10px 10px;
+    gap: 3em; 
+}
+.loginarea{
+    text-align: center;
+    justify-content: center; 
+}
+#wrapper{
+    display: flex;
+    background-color: rgb(59, 36, 1);
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    margin: 30px 80px;
+    border-radius: 10%;
+}
+#content{
+    width: 70%;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center; 
+}
+
