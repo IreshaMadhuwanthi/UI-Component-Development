@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Navigation</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="nav">
+                   <div class="logo_area">
+                    <img src="./images/logo.png" class="logo" >
+                   </div>
+                    <div id="lists">
+                        <a href="#">Home</a>
+                        <a href="#">Popular</a>
+                        <a href="#">Products</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Recipes</a>
+                        <a href="#">Contact Us</a>   
+                    </div>
+                    <div id="menu_area">
+                        <input type="checkbox" name="menucheck" id="openmenu">
+                        <label for="openmenu" class="menuicon" title="Open menue">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" id="menu">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                              </svg>
+
+                        </label>
+                        <input type="checkbox" name="closecheck" id="closemenu">
+                        <label for="closemenu" title="Close menue">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" id="close">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                              </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        <div class="main_content">
+            <div class="content">
+                <div class="store_name" id="s_name">
+                    Yummy Food Store
+                </div>
+                <p class="wtxt" id="welcometxt">
+                    Welcome to Yummy Food Store, where taste meets delight ! Explore a diverse array of mouthwatering treats crafted with passion and care. From heavenly cakes to irresistible sweets and freshly baked goods, our store is a haven for food enthusiasts. Join us on a culinary journey that promises to satisfy your cravings and leave you wanting more. Indulge in the goodness of Yummy Food Store, where every bite is a celebration of flavor!
+                </p>
+                <div class="cta" id="contact_us">
+                    <a href="#" class="link">Contact Us</a>
+                </div>
+            </div> 
+        </div>
+   </div>  
+</body>
+<script src="scripts.js"></script>
+</html>
